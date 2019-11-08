@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JANUARY Event</title>
+  <style type="text/css">
+    body{
+      background-image: url('photo2.jpg');
+      background-color: white;
+    }
+    #id1{
+      color:white;
+    }
+    #id2{
+      color: red;
+    }
+    * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+  </style>
+	
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body >
+	<div class="container">
+			<center>
+				<marquee>
+			<h3 style="color: #191970;">WELCOME TO THIS EVENT!!!!</h3>
+		</marquee>
+			</center>
+	</div>
+	<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="index.html">Home</a></li>
+      
+  </ul>
+      <ul class="nav navbar-nav navbar-right">
+      <li><a href="register2.html">Regesttion <span class="glyphicon glyphicon-user"></span></a></li>
+      </ul>
+      
+    
+  </div>
+</nav>
+<div class="container">
+    <marquee id="id2"><p>last date to register is 12-12-2019</p></marquee>
+    <br><br><br>
+  </div>
+<div class="container">
+  <div class="row">
+  <center>
+    <h3 style="color: #000000;">Details of the Event</h3></center>
+    <div class="col-sm-4" id="id1">
+      <center>
+      <h3>Location</h3></center>
+      <ul>
+        <li>Delhi</li><br>
+        <li>Jaipur</li><br>
+        <li>Mumbai</li><br>
+        <li>Goa</li><br>
+      </ul>
+    </div>
+    <div class="col-sm-4" id="id1">
+      <center>
+      <h3>Prize</h3></center>
+      <ul >
+        <li><b>First prize: Trophy with 5 lakh cash</li><br>
+        <li>Second prize: Trophy with 3 lakh cash</li><br>
+        <li>Third prize :Trophy with 1 lakh cash</li>
+      </ul>
+    </div>
+    <div class="col-sm-4" id="id1">
+    <center>  
+<h2>Games</h2></center>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="pubg.jpg" style="width:100%">
+  <div class="text">PUBG</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="cod.jpg" style="width:100%">
+  <div class="text">COD</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="gta.jpg" style="width:100%">
+  <div class="text">GTA</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="fortnight.jpg" style="width:100%">
+  <div class="text">FORTNITE</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+    </div>
+  
+</div>
+
+<script type="text/javascript">
+  var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000);
+}
+</script>
+ 
+</body>
+</html>

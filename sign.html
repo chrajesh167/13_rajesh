@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGNUP</title>
+	<link rel="stylesheet" type="text/css" href="stylesign.css">
+</head>
+<body>
+<div id="login-box">
+	<div class="left-box">
+	<h1>Sign Up</h1>
+	<input type="text" name="username" placeholder="Username"/>
+	<input type="text" name="email" placeholder="Email"/>
+	<input type="password" name="password" placeholder="Password"/>
+	<input type="password" name="password2" placeholder="Retype password"/>
+	<input type="submit"name="signup-button" value="Sign Up" onclick="al()"/>
+</div>
+<div class="right-box">
+	<span class="signinwith">Sign in with<br/>Social Network</span>
+	<button onclick="window.location.href='www.facebook.com'"class="social facebook">Login with Facebook</button>
+	<button onclick="window.location.href='www.twitter.com'"class="social twitter">Login with Twitter</button>
+	<button onclick="window.location.href='www.gmail.com'"class="social google">Login with Google</button>
+	
+
+</div>
+<div class="or">OR</div>
+<script>
+	function al(){
+		window.alert("SIGNUP Succesfully");
+		return window.location.href='asdf.html'
+	}
+</script>
+</div>
+</body>
+</html>

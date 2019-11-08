@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    body{
+      background-color: #ADD8E6;
+      background-image: url("recent.png");
+      
+    }
+
+    }
+    #but1{
+      background-color: #556B2F;
+      border-radius: 12px;
+    }
+  </style>
+</head>
+<body>
+	<div class="container">
+		<center>
+			<h3><strong> Registration Form of the event </strong></h3>
+			<p>Fill the following details</p></center>
+		 <form name="forname" action="/action_page.php">
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control"  placeholder="Enter name"name="name" required />
+    </div>
+    <div class="form-group">
+      <label for="">Mobile NO:</label>
+      <input type="number" class="form-control" name="" placeholder="Enter mobile number" minlength="10" maxlength="10" required>
+    </div>
+    <div class="form-group">
+      <label for="sel1">Select Events Months:</label>
+      <select class="form-control" id="sel1">
+        <option>January</option>
+        <option>Aprail</option>
+        <option>August</option>
+        <option>December</option>
+      </select>
+      <br>
+       <div class="form-group">
+      <label for="sel1">Select Games:</label>
+      <select class="form-control" id="sel1">
+        <option>COD</option>
+        <option>PUBG</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      <br>
+       <div class="form-group">
+      <label for="sel1">Select Place:</label>
+      <select class="form-control" id="sel1">
+        <option>Delhi</option>
+        <option>Jaipur</option>
+        <option>Mumbai</option>
+        <option>Goa</option>
+      </select><br>
+      <div>
+      	<center>
+      	<button type="submit" onclick="clicck()" class="btn btn-default" id="but1">submit</button></center>
+      
+      </div>
+      
+  </form>
+  <p id="demo"></p>
+	</div>
+	<script type="text/javascript">
+		function clicck(){
+			window.alert("You Have successfully subbmited");
+		}
+	</script>
+
+</body>
+</html>

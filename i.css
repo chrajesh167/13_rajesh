@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Faster+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body
+{
+	overflow-x: hidden;
+	background-color: black;
+}
+.navbar
+{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 30px;
+	background: rgba(0,0,0,1)!important ;
+}
+
+.navbar-nav li
+{
+	margin-right: 100px;
+}
+.navbar-nav .nav-link
+{
+	transform: scale(1);
+	transition: 0.5s;
+	display: block;
+}
+.navbar-nav .nav-link.hide-item
+{
+	transform: scale(0);
+}
+.navbar-nav .nav-item:nth-child(2) a.nav-link.hide-item
+{
+	transition-delay: 0.5s;
+}
+.navbar-nav .nav-item:nth-child(3) a.nav-link.hide-item
+{
+	transition-delay: 0.4s;
+}
+.navbar-nav .nav-item:nth-child(4) a.nav-link.hide-item
+{
+	transition-delay: 0.3s;
+}
+.navbar-nav .nav-item:nth-child(5) a.nav-link.hide-item
+{
+	transition-delay: 0.2s;
+}
+.navbar-nav .nav-item:nth-child(6) a.nav-link.hide-item
+{
+	transition-delay: 0.1s;
+}
+.search-form
+{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(0);
+	width: 600px;
+	height: 44px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
+
+}
+.search-form.active
+{
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0.5s;
+}
+.search-form input
+{
+	width: 20%;
+	height: 44px;
+	background: transparent;
+	color: #fff;
+	border: none;
+	outline: none;
+	font-size: 16px;
+}
+.search-form input::placeholder
+{
+	color: #fff;
+}
+.search-form::before
+{
+	position: absolute;
+	top:12px;
+	left:-26px;
+	font-size: 18px;
+	color: #fff;
+	
+}
+.close
+{
+	right:0;
+	margin-right: 105px;
+	position: absolute;
+	line-height: 105px;
+	background:#000;
+	font-size: 18px;
+	text-align: right;
+	width: 20px;
+	cursor: pointer;
+    visibility: hidden;
+}
+.close.active
+{
+	opacity: 1;
+	visibility: visible;
+}
+.fa
+{
+	color: #ffffff;
+	margin-top: 23px;
+	
+}
+.navbar-brand .navbar-nav .nav-link
+{
+	color: aliceblue;
+	padding-top: .8rem;
+}
+.leftside
+
+{   margin-top: 80px;
+	width: 1100px;
+	height: 880px;
+	background-image: url(img/ank.jpeg);
+	background-size: cover;
+}
+.rightside
+{
+	margin-top: 80px;
+    margin-left:-25px;
+	background-image: url(img/gpu.jpg);
+	background-size: cover;
+
+}
+.rightside1
+{
+	background-image: url(img/cool.jpg);
+	background-size: cover;
+}
+.wrapper
+{
+	width: 1000px;
+	height: 750px;
+}
+.content
+{
+    top: 30%;
+    left: 4%;
+    color:#fff;
+    
+}
+.content P
+{
+	font-family: 'Saira Stencil One', cursive;
+   font-size: 20px;
+}
+.content h3
+{
+	font-size: 15px;
+	font-weight: lighter;
+}
+.overlay
+{
+    top: 0;
+    left: 0%;
+    bottom: 0;
+    right: 0;
+    height:750px;
+    width:100%;
+	opacity: 0;
+	transition: 1s ease;
+    background: rgba(255,0,0,0.9);
+
+}
+.wrapper:hover .overlay
+{
+    opacity: 2;
+}
+.container .row .c1
+{
+	height: 400px;
+	width: 180px;
+	float: right;
+	margin: 0;
+	margin-top: 30px;
+	background-image: url(img/app.jpg);
+	background-size: cover;
+
+}
+.container
+{
+	margin-top: 55px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+
+}
+.container .c2
+{
+	margin-top: 50px;
+	height: 450px;
+	width: 350px;
+}
+.container .c1 h1
+{
+font-family: 'Faster One', cursive;
+
+
+}
+.get
+{
+	
+	margin-top: 70px;
+	color: #ffffff;
+
+}
+.app
+{
+	font-family: 'Saira Stencil One', cursive;
+	font-size: 50px;
+
+}
+.container .border
+{
+	height: 5px;
+	width: 70px;
+}
+.container .c1 h3
+{
+	
+}
+.container .c1 h2{
+	font-family: 'Saira Stencil One', cursive;
+}
+.container p
+{
+	margin-top: 10px;
+	font-family: 'Fira Sans Condensed', sans-serif;
+	color: #ffffff;
+}
+.container .c3
+{ 
+	margin-top: 50px;
+	margin-left: 100px;
+
+	
+	
+}
+.btn
+{
+	border:1px;
+	width: 170px;
+	height: 51px;;
+}
+.btn .fab
+{
+	float: left;
+}
+.ios
+{
+	font-family: 'Fira Sans Condensed', sans-serif;
+
+}
+.container .c3 .sr-only
+{
+	margin-top: 500px;
+}
+.container .c3 .d 
+{
+	height: 450px;
+	background-size: cover;
+	
+}
+.jumbotron
+{
+	
+    background-size: cover ;
+    height: 350px;
+    background-image: url(al.jpg);
+}
+.hardware
+{
+	font-family: Poppins, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+    font-size: 45px;
+}
+.tech
+{
+	color: #fff;
+	font-weight: lighter;
+	vertical-align: geekoine;
+}
+.rtx
+{
+	color:#76b900;
+	font-family:"source-han-sans-japanese",Helvetica,Arial,Sans-Serif;
+	font-weight: lighter;
+
+}
+.p9
+{
+	overflow: hidden;
+	color: #fff;
+	font-family:"source-han-sans-japanese",Helvetica,Arial,Sans-Serif;
+}
+.bright
+{
+
+       transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(50%);
+}
+.bright:hover {
+ filter: brightness(100%);
+  transform: scale(1.3);
+}
+.btn
+{
+	 font-weight: bold;
+	 font-size: 25px;
+	 font-family:"source-han-sans-japanese",Helvetica,Arial,Sans-Serif;
+	 border-radius: 2%;
+	}
+.btn:hover
+{
+    transition: 1s;
+   
+}
+
+.line
+{
+	border-left: 2px solid grey;
+  height: 600px;
+}
+
+
+
+.lady
+{
+	height:400px;
+	width: auto;
+	margin-top: 5px;
+	background-image: url(lady.jpg);
+	background-size: cover;
+}
+.gp
+{
+	height:250px;
+	width: auto;
+	margin-top: 5px;
+	background-image: url(gp.jpg);
+	background-size: cover;
+
+}
+.pro
+{
+	height:250px;
+	width: auto;
+	margin-top: 5px;
+	background-image: url(pro.jpg);
+	background-size: cover;
+}
+.h3
+{
+font-family: 'Monoton', cursive;
+color: #fff;
+font-size: 23px;
+font-weight: lighter;
+}
+.h4
+{
+	font-weight: lighter;
+}
+.fas
+{
+	float: right;
+	color: #fff;
+}
